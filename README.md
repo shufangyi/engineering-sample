@@ -62,7 +62,7 @@ npm install --save-dev husky
 
 ```shell
 npm install -D semantic-release-cli
-npm install -D semantic-release @semantic-release/apm-config
+npm install -D @jedmao/semantic-release-npm-github-config
 npx semantic-release-cli setup
 
 ```

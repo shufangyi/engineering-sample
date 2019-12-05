@@ -1,13 +1,24 @@
 language: node_js
+
+cache:
+  directories:
+    - ~/.npm
+
+notifications:
+  email: false
+
 node_js:
   - 8
   - 6
-jobs:
-  include:
-    - stage: release
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+
+script:
+  - npm run test
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npx semantic-release
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
