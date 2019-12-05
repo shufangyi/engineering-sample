@@ -1,6 +1,6 @@
 {
   "name": "engineering-sample",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "project enginerring",
   "main": "index.js",
   "scripts": {
