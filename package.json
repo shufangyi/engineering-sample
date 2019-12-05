@@ -1,15 +1,16 @@
 {
   "name": "engineering-sample",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "project enginerring",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shufangyi/engineering-sample.git"
+    "url": "https://github.com/shufangyi/engineering-sample.git"
   },
   "author": "Mr.Tree",
   "license": "MIT",
@@ -22,7 +23,9 @@
     "@commitlint/config-conventional": "^8.2.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "husky": "^3.1.0"
+    "husky": "^3.1.0",
+    "semantic-release-cli": "^5.2.3",
+    "semantic-release": "^15.13.31"
   },
   "config": {
     "commitizen": {
