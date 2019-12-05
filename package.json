@@ -1,0 +1,37 @@
+{
+  "name": "engineering-sample",
+  "version": "1.0.0",
+  "description": "project enginerring",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "npx git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shufangyi/engineering-sample.git"
+  },
+  "author": "Mr.Tree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shufangyi/engineering-sample/issues"
+  },
+  "homepage": "https://github.com/shufangyi/engineering-sample#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
