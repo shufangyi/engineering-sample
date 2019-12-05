@@ -62,8 +62,9 @@ npm install --save-dev husky
 
 ```shell
 npm install -D semantic-release-cli
-
+npm install -D semantic-release @semantic-release/apm-config
 npx semantic-release-cli setup
-```
 
-根目录创建文件 `.travis.yml`
+```
+根目录创建文件 `.releaserc.json` [参考](https://github.com/semantic-release/apm-config)
+根目录创建文件 `.travis.yml` [参考](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/travis.md)
