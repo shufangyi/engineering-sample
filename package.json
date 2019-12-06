@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
+    "change-log": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
+    "update-version": "npx standard-version",
     "commit": "npx git-cz"
   },
   "repository": {
